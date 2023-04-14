@@ -1,0 +1,20 @@
+# Use the official MongoDB image
+FROM mongo:latest
+
+# Copy the MongoDB configuration file to the container
+COPY mongod.conf /etc/mongod.conf
+
+# Set up the entrypoint script for the container
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+
+# Expose the default MongoDB port
+EXPOSE 27017
+
+# Set some default environment variables
+ENV MONGO_INITDB_ROOT_USERNAME=admin
+ENV MONGO_INITDB_ROOT_PASSWORD=password
+
+# Start MongoDB with authentication enabled
+CMD ["mongod", "--auth", "--config", "/etc/mongod.conf"]

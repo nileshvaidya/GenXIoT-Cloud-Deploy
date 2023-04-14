@@ -1,0 +1,51 @@
+version: '3.8'
+services:
+   # server:
+   #    image: node:18
+   #    ports:
+   #    - '8080:8080'
+   #    volumes:
+   #    - ./server:/root/server
+   #    env_file:
+   #    - ./deploy/server.env
+   #    entrypoint: sh /root/server/start_server.sh
+   #    external_links:
+   #    -  mongodb
+
+   # client:
+   #    build:
+   #       context: ./deploy
+   #       dockerfile: Dockerfile
+   #    ports:
+   #    - '80:80'
+   #    - '443:443'
+   #    volumes:
+   #    - ./client/build:/var/www/html
+   #    - ./deploy/default.conf:/etc/nginx/sites-available/default
+   #    depends_on:
+   #    - server
+
+   mongodb:
+      container_name: mongo
+      build:
+         context: ./mongo
+         dockerfile: Dockerfile
+      environment:
+         MONGO_INITDB_ROOT_USERNAME: nav
+         MONGO_INITDB_ROOT_PASSWORD: askinfo
+      volumes:
+      - ./mongo/SSL:/etc/ssl
+      ports:
+      - "27017:27017"
+     
+   # mosquitto:
+   #    container_name: mqtt
+   #    image: eclipse-mosquitto
+   #    restart: always
+   #    volumes:
+   #    - ./config:/mosquitto/config
+   #    - ./config:/mosquitto/data
+   #    - ./config:/mosquitto/log
+   #    ports:
+   #    - 1883:1883
+   #    - 9001:9001

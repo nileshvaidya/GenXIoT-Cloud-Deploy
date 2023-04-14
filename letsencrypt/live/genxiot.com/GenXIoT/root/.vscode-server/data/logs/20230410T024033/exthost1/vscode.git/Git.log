@@ -1,0 +1,49 @@
+2023-04-10 02:40:56.357 [info] Log level: Info
+2023-04-10 02:40:56.357 [info] Validating found git in: "git"
+2023-04-10 02:40:56.357 [info] Using git "2.25.1" from "git"
+2023-04-10 02:40:56.357 [info] > git rev-parse --show-toplevel [102ms]
+2023-04-10 02:40:56.357 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 02:40:56.357 [info] > git rev-parse --show-toplevel [14ms]
+2023-04-10 02:40:56.357 [info] > git rev-parse --git-dir --git-common-dir [9ms]
+2023-04-10 02:40:56.357 [info] Open repository: /root/GenXIoT
+2023-04-10 02:40:56.357 [info] > git rev-parse --show-toplevel [13ms]
+2023-04-10 02:40:56.357 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 02:40:56.357 [info] > git rev-parse --show-toplevel [1ms]
+2023-04-10 02:40:56.357 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 02:40:56.357 [info] > git config --get commit.template [30ms]
+2023-04-10 02:40:56.357 [info] > git rev-parse --show-toplevel [12ms]
+2023-04-10 02:40:56.357 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 02:40:56.357 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [19ms]
+2023-04-10 02:40:56.357 [info] > git rev-parse --show-toplevel [15ms]
+2023-04-10 02:40:56.357 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 02:40:56.357 [info] > git status -z -uall [81ms]
+2023-04-10 02:40:56.357 [info] > git rev-parse --show-toplevel [100ms]
+2023-04-10 02:40:56.357 [info] > git config --get commit.template [25ms]
+2023-04-10 02:40:56.357 [info] > git rev-parse --git-dir --git-common-dir [43ms]
+2023-04-10 02:40:56.357 [info] Open repository: /root/.nvm
+2023-04-10 02:40:56.357 [info] > git rev-parse --show-toplevel [101ms]
+2023-04-10 02:40:56.357 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 02:40:56.357 [info] > git config --get commit.template [16ms]
+2023-04-10 02:40:56.357 [info] > git rev-parse --show-toplevel [8ms]
+2023-04-10 02:40:56.357 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 02:40:56.357 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [17ms]
+2023-04-10 02:40:56.357 [info] > git status -z -uall [31ms]
+2023-04-10 02:40:56.357 [info] > git rev-parse --show-toplevel [46ms]
+2023-04-10 02:40:56.357 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 02:40:56.357 [info] > git for-each-ref --format %(refname) %(objectname) %(*objectname) refs/tags [103ms]
+2023-04-10 02:40:56.357 [info] > git rev-parse --show-toplevel [110ms]
+2023-04-10 02:40:56.357 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 02:40:56.357 [info] > git status -z -uall [46ms]
+2023-04-10 02:40:56.357 [info] > git rev-parse --show-toplevel [23ms]
+2023-04-10 02:40:56.357 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 02:40:56.357 [info] > git rev-parse --show-toplevel [14ms]
+2023-04-10 02:40:56.357 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 02:40:56.427 [info] > git show --textconv :server/src/socket.ts [7ms]
+2023-04-10 02:40:56.431 [info] > git ls-files --stage -- /root/GenXIoT/server/src/socket.ts [5ms]
+2023-04-10 02:40:56.438 [info] > git cat-file -s 7499ed6bdc971165f6c6ef858390314ad8429a15 [3ms]
+2023-04-10 02:40:56.752 [info] > git check-ignore -v -z --stdin [7ms]
+2023-04-10 02:42:35.406 [info] > git check-ignore -v -z --stdin [2ms]
+2023-04-10 02:42:35.916 [info] > git check-ignore -v -z --stdin [2ms]
+2023-04-10 02:53:13.310 [info] > git config --get commit.template [7ms]
+2023-04-10 02:53:13.312 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2023-04-10 02:53:13.322 [info] > git status -z -uall [5ms]

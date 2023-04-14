@@ -1,0 +1,22 @@
+FROM ubuntu:18.04
+
+RUN apt-get update -y && apt-get install -y \
+    software-properties-common \
+    && add-apt-repository ppa:certbot/certbot \
+    && apt-get update -y \
+    && apt-get install -y \
+    nginx \
+    python-certbot-nginx \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# # Copy SSL certificate files to the appropriate directory
+# COPY /etc/letsencrypt/live/genxiot.com/fullchain.pem /etc/letsencrypt/live/genxiot.com/privkey.pem /etc/letsencrypt/live/genxiot.com/chain.pem /etc/letsencrypt/
+
+COPY /etc/letsencrypt/options-ssl-nginx.conf  /etc/nginx/sites-enabled/
+
+EXPOSE 80
+
+STOPSIGNAL SIGTERM
+
+CMD ["nginx", "-g", "daemon off;"]

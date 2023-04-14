@@ -1,0 +1,21 @@
+FROM mongo:latest
+
+# Set environment variables
+ENV MONGO_INITDB_ROOT_USERNAME=admin
+ENV MONGO_INITDB_ROOT_PASSWORD=password
+ENV MONGO_INITDB_DATABASE=genxiot
+
+# Create data directory
+RUN mkdir -p /data/db
+
+# Set data directory ownership to mongodb user
+RUN chown -R mongodb:mongodb /data/db
+
+# Copy MongoDB configuration file
+COPY ./mongod.conf /etc/mongod.conf
+
+# Expose MongoDB default port
+EXPOSE 27017
+
+# Start MongoDB service
+CMD ["mongod", "-f", "/etc/mongod.conf"]

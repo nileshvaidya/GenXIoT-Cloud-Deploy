@@ -1,0 +1,13 @@
+# Use the official MongoDB image
+FROM mongo:latest
+
+# Copy the MongoDB configuration file to the container
+COPY mongod.conf /etc/mongod.conf
+
+
+# Expose the default MongoDB port
+EXPOSE 27017
+
+
+# Start the MongoDB service with authentication and SSL security
+CMD ["mongod", "--config", "/etc/mongod.conf", "--auth", "--sslMode", "requireSSL", "--sslPEMKeyFile", "/etc/ssl/mongodb.pem"]

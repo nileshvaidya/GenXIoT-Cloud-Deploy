@@ -1,0 +1,47 @@
+2023-04-10 03:03:03.691 [info] Log level: Info
+2023-04-10 03:03:03.691 [info] Validating found git in: "git"
+2023-04-10 03:03:03.691 [info] Using git "2.25.1" from "git"
+2023-04-10 03:03:03.691 [info] > git rev-parse --show-toplevel [78ms]
+2023-04-10 03:03:03.691 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 03:03:03.691 [info] > git rev-parse --show-toplevel [4ms]
+2023-04-10 03:03:03.691 [info] > git rev-parse --git-dir --git-common-dir [8ms]
+2023-04-10 03:03:03.691 [info] Open repository: /root/GenXIoT
+2023-04-10 03:03:03.691 [info] > git rev-parse --show-toplevel [21ms]
+2023-04-10 03:03:03.691 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 03:03:03.691 [info] > git config --get commit.template [30ms]
+2023-04-10 03:03:03.691 [info] > git rev-parse --show-toplevel [42ms]
+2023-04-10 03:03:03.691 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 03:03:03.691 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [25ms]
+2023-04-10 03:03:03.691 [info] > git rev-parse --show-toplevel [19ms]
+2023-04-10 03:03:03.691 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 03:03:03.691 [info] > git status -z -uall [157ms]
+2023-04-10 03:03:03.691 [info] > git rev-parse --show-toplevel [183ms]
+2023-04-10 03:03:03.691 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 03:03:03.691 [info] > git rev-parse --show-toplevel [24ms]
+2023-04-10 03:03:03.691 [info] > git rev-parse --git-dir --git-common-dir [98ms]
+2023-04-10 03:03:03.691 [info] Open repository: /root/.nvm
+2023-04-10 03:03:03.691 [info] > git config --get commit.template [157ms]
+2023-04-10 03:03:03.691 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [23ms]
+2023-04-10 03:03:03.691 [info] > git rev-parse --show-toplevel [75ms]
+2023-04-10 03:03:03.691 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 03:03:03.691 [info] > git config --get commit.template [55ms]
+2023-04-10 03:03:03.691 [info] > git status -z -uall [49ms]
+2023-04-10 03:03:03.691 [info] > git rev-parse --show-toplevel [29ms]
+2023-04-10 03:03:03.691 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 03:03:03.691 [info] > git rev-parse --show-toplevel [28ms]
+2023-04-10 03:03:03.691 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 03:03:03.691 [info] > git for-each-ref --format %(refname) %(objectname) %(*objectname) refs/tags [110ms]
+2023-04-10 03:03:03.691 [info] > git rev-parse --show-toplevel [19ms]
+2023-04-10 03:03:03.691 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 03:03:03.691 [info] > git status -z -uall [96ms]
+2023-04-10 03:03:03.691 [info] > git rev-parse --show-toplevel [69ms]
+2023-04-10 03:03:03.691 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 03:03:03.691 [info] > git check-ignore -v -z --stdin [141ms]
+2023-04-10 03:03:03.691 [info] > git rev-parse --show-toplevel [59ms]
+2023-04-10 03:03:03.691 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-04-10 03:03:03.711 [info] > git show --textconv :server/src/socket.ts [8ms]
+2023-04-10 03:03:03.715 [info] > git ls-files --stage -- /root/GenXIoT/server/src/socket.ts [5ms]
+2023-04-10 03:03:03.721 [info] > git cat-file -s 7499ed6bdc971165f6c6ef858390314ad8429a15 [1ms]
+2023-04-10 03:03:03.867 [info] > git check-ignore -v -z --stdin [36ms]
+2023-04-10 03:03:12.425 [info] > git check-ignore -v -z --stdin [8ms]
+2023-04-10 03:03:12.426 [info] > git check-ignore -v -z --stdin [3ms]

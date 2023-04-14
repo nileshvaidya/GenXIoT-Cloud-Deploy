@@ -1,0 +1,41 @@
+{
+  "python.defaultInterpreterPath": "C:\\Users\\Nilesh\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "editor.minimap.enabled": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.CustomBrowser": "firefox",
+  "emmet.includeLanguages": {
+    "django-html": "html",
+    "javascript": "javascriptreact"
+  },
+  "editor.linkedEditing": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.wordWrap": "on",
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Cobalt2",
+  "editor.fontFamily": "'cascadia code'",
+  "editor.fontLigatures": true,
+  "remote.SSH.remotePlatform": {
+    "165.232.187.2": "linux",
+    "genx-temp": "linux",
+    "167.71.226.32": "linux",
+    "genxiot-docker": "linux"
+  },
+  "remote.SSH.defaultForwardedPorts": [],
+  "workbench.editor.enablePreview": false,
+  "remote.SSH.useLocalServer": false
+}

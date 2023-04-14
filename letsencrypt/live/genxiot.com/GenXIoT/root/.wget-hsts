@@ -1,0 +1,6 @@
+# HSTS 1.0 Known Hosts database for GNU Wget.
+# Edit at your own risk.
+# <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
+update.code.visualstudio.com	0	0	1680782387	31536000
+insights.nyc3.cdn.digitaloceanspaces.com	0	1	1665567125	15552000
+repos-droplet.digitalocean.com	0	1	1681219469	15552000

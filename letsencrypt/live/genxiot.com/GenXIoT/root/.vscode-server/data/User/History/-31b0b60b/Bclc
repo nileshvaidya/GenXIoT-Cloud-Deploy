@@ -1,0 +1,8 @@
+FROM mongo:latest
+RUN apt-get update && apt-get install -y openssl
+# RUN mkdir /etc
+RUN cd /etc
+RUN mkdir /ssl
+COPY ./SSL/cert.pem /ssl/
+COPY ./SSL/ca.pem /ssl/
+CMD ["mongod", "--config", "/etc/mongod.conf", "--tlsMode", "requireTLS"]
